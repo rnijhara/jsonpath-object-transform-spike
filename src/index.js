@@ -1,5 +1,5 @@
 const transform = require("jsonpath-object-transform");
-const baseItinerary = require("./baseItinerary");
+const data = require("./data");
 
 const template = {
   id: "$.id",
@@ -27,4 +27,4 @@ const template = {
   ]
 };
 
-console.log(JSON.stringify(transform(baseItinerary, template), null, 2));
+console.log(JSON.stringify(transform(data, template), null, 2));
